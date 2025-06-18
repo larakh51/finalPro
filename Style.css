@@ -1,4 +1,19 @@
-/* style.css – Fresh Green Theme */
+/* style.css – Fresh Green Theme with Animations */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes popTag {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
 
 * {
   box-sizing: border-box;
@@ -57,11 +72,12 @@ h1 {
   font-weight: 500;
   margin-left: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .top-buttons button:hover {
   background-color: #388e3c;
+  transform: translateY(-2px);
 }
 
 .contacts-list {
@@ -78,6 +94,8 @@ h1 {
   align-items: center;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
 }
 
 .contact-card:hover {
@@ -152,6 +170,7 @@ footer {
   max-width: 90%;
   position: relative;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  animation: zoomIn 0.4s ease forwards;
 }
 
 .close-btn {
@@ -221,14 +240,16 @@ footer {
   color: #2e7d32;
   margin-left: 6px;
   font-weight: 500;
+  animation: popTag 0.5s ease forwards;
+  opacity: 0;
 }
 
 .tag-label.family {
-  background-color: #d7f0d8;
+  background-color: #a5d6a7;
 }
 
 .tag-label.work {
-  background-color: #a6cca9;
+  background-color: #81c784;
 }
 
 .tag-label.friends {
