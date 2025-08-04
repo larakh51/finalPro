@@ -12,7 +12,7 @@ const contacts = [
     age: 24,
     imageUrl: "https://i.pravatar.cc/200?img=5",
     tag: "family",
-    birthDate: "2001-06-17",
+    birthDate: "2001-08-11",
   },
   {
     name: "Andro levi",
@@ -30,7 +30,7 @@ const contacts = [
     age: 26,
     imageUrl: "https://i.pravatar.cc/200?img=8",
     tag: "family",
-    birthDate: "1999-10-10",
+    birthDate: "1999-08-06",
   },
   {
     name: "jivan lord",
@@ -42,3 +42,4 @@ const contacts = [
     birthDate: "1994-08-11",
   },
 ];
+
